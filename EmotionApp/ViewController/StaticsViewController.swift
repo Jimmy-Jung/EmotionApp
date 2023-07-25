@@ -15,10 +15,25 @@ class StaticsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configUI()
+        connectLabel()
     }
     
+    private func configUI() {
+        backgroundViewCollection.forEach {
+            $0.layer.cornerRadius = 10
+            $0.clipsToBounds = true
+        }
+    }
+    
+    private func connectLabel() {
+        for (index, label) in countLabelCollection.enumerated() {
+            let count = Emotion.init(rawValue: index)?.getCount
+            guard let labelCount = count else { return }
+            label.text = "\(String(labelCount))점"
+        }
+        
+    }
     @IBAction func pullDownTapped(_ sender: UIBarButtonItem) {
     }
     

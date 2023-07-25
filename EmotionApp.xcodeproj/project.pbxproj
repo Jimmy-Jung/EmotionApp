@@ -66,16 +66,48 @@
 			children = (
 				5501B6372A6FB2A1008378F0 /* AppDelegate.swift */,
 				5501B6392A6FB2A1008378F0 /* SceneDelegate.swift */,
-				5501B63B2A6FB2A1008378F0 /* EmotionViewController.swift */,
-				5501B63D2A6FB2A1008378F0 /* Main.storyboard */,
 				5501B6402A6FB2A3008378F0 /* Assets.xcassets */,
-				5501B6422A6FB2A4008378F0 /* LaunchScreen.storyboard */,
 				5501B6452A6FB2A4008378F0 /* Info.plist */,
-				5501B64B2A6FBA8E008378F0 /* StaticsViewController.swift */,
-				5501B64D2A6FBF1A008378F0 /* Emotion.swift */,
-				5501B64F2A6FC066008378F0 /* UserDefault.swift */,
+				5501B6572A6FDC24008378F0 /* Helper */,
+				5501B6562A6FDC1E008378F0 /* View */,
+				5501B6552A6FDC15008378F0 /* Model */,
+				5501B6542A6FDC08008378F0 /* ViewController */,
 			);
 			path = EmotionApp;
+			sourceTree = "<group>";
+		};
+		5501B6542A6FDC08008378F0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5501B63B2A6FB2A1008378F0 /* EmotionViewController.swift */,
+				5501B64B2A6FBA8E008378F0 /* StaticsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5501B6552A6FDC15008378F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5501B64D2A6FBF1A008378F0 /* Emotion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5501B6562A6FDC1E008378F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5501B63D2A6FB2A1008378F0 /* Main.storyboard */,
+				5501B6422A6FB2A4008378F0 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5501B6572A6FDC24008378F0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5501B64F2A6FC066008378F0 /* UserDefault.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
