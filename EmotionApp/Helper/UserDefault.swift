@@ -8,6 +8,7 @@
 import Foundation
 
 @propertyWrapper
+/// 유저디폴트 프로퍼티 래퍼
 struct UserDefault<T> {
     private let key: String
     private let defaultValue: T
@@ -27,6 +28,7 @@ struct UserDefault<T> {
     }
 }
 
+/// Emotion UserDefaults
 struct EmotionUserDefaults {
     struct VeryHappyIndex {
         @UserDefault(key: keyEnum.veryHappyIndex.rawValue, defaultValue: 0)

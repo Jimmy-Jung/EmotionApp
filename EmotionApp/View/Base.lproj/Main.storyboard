@@ -25,6 +25,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-pm-zr1">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="133.33333333333334"/>
                                         <color key="backgroundColor" red="0.90588235859999999" green="0.45098042490000001" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <menu key="menu" id="tEY-TN-DSb">
+                                            <children>
+                                                <command title="Item 1" id="oEb-3D-Yhx"/>
+                                                <command title="Item 2" id="jTl-Jv-fFr"/>
+                                            </children>
+                                        </menu>
                                         <state key="normal" image="emoji1"/>
                                         <connections>
                                             <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frX-Zu-YGF"/>
@@ -34,6 +40,12 @@
                                         <rect key="frame" x="0.0" y="133.33333333333334" width="393" height="133.00000000000003"/>
                                         <color key="backgroundColor" red="0.9529411793" green="0.86666667460000002" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <menu key="menu" id="vZ5-p3-yi8">
+                                            <children>
+                                                <command title="Item 1" id="RnF-6p-r8X"/>
+                                                <command title="Item 2" id="O0P-w8-ev7"/>
+                                            </children>
+                                        </menu>
                                         <state key="normal" image="emoji2"/>
                                         <connections>
                                             <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4tK-BM-zhJ"/>
@@ -43,6 +55,12 @@
                                         <rect key="frame" x="0.0" y="266.33333333333331" width="393" height="133.33333333333331"/>
                                         <color key="backgroundColor" red="0.97254902119999997" green="0.98039215800000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <menu key="menu" id="fEe-O2-D4A">
+                                            <children>
+                                                <command title="Item 1" id="Z4p-D6-JMl"/>
+                                                <command title="Item 2" id="S8H-9U-gtK"/>
+                                            </children>
+                                        </menu>
                                         <state key="normal" image="emoji3"/>
                                         <connections>
                                             <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibw-X1-iTA"/>
@@ -52,6 +70,12 @@
                                         <rect key="frame" x="0.0" y="399.66666666666669" width="393" height="133.00000000000006"/>
                                         <color key="backgroundColor" red="0.72941178080000002" green="0.93333333730000001" blue="0.88235294819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <menu key="menu" id="lvg-xN-qw1">
+                                            <children>
+                                                <command title="Item 1" id="Bbc-QY-Twh"/>
+                                                <command title="Item 2" id="n2k-PJ-kJU"/>
+                                            </children>
+                                        </menu>
                                         <state key="normal" image="emoji4"/>
                                         <connections>
                                             <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9G-Yc-RCt"/>
@@ -61,6 +85,12 @@
                                         <rect key="frame" x="0.0" y="532.66666666666663" width="393" height="133.33333333333337"/>
                                         <color key="backgroundColor" red="0.24313727020000001" green="0.40000003579999999" blue="0.58823531870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <menu key="menu" id="gec-on-FJE">
+                                            <children>
+                                                <command title="Item 1" id="cvP-3z-rKR"/>
+                                                <command title="Item 2" id="4Ic-0d-MXI"/>
+                                            </children>
+                                        </menu>
                                         <state key="normal" image="emoji5"/>
                                         <connections>
                                             <action selector="emotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lk5-O9-ouY"/>
@@ -294,9 +324,6 @@
                                 <state key="normal">
                                     <imageReference key="image" image="ellipsis.circle" catalog="system" symbolScale="large"/>
                                 </state>
-                                <connections>
-                                    <action selector="rightBarButtonTapped:" destination="ko1-OA-Viw" eventType="touchUpInside" id="oRm-e1-sb9"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>

@@ -8,6 +8,7 @@
 import Foundation
 
 
+/// 이모션 UserDefault 값 다루기
 enum Emotion: Int, CaseIterable {
     case veryHappy = 0
     case moderateSmile
@@ -15,37 +16,9 @@ enum Emotion: Int, CaseIterable {
     case slightlyUpset
     case verySad
     
-    var getCount: Int {
-        switch self {
-        case .veryHappy:
-            return EmotionUserDefaults.VeryHappyIndex.count
-        case .moderateSmile:
-            return EmotionUserDefaults.ModerateSmileIndex.count
-        case .neutral:
-            return EmotionUserDefaults.NeutralIndex.count
-        case .slightlyUpset:
-            return EmotionUserDefaults.SlightlyUpsetIndex.count
-        case .verySad:
-            return EmotionUserDefaults.verySadIndex.count
-        }
-    }
-    
-    func addCount(_ num: Int) {
-        switch self {
-            
-        case .veryHappy:
-            EmotionUserDefaults.VeryHappyIndex.count += num
-        case .moderateSmile:
-            EmotionUserDefaults.ModerateSmileIndex.count += num
-        case .neutral:
-            EmotionUserDefaults.NeutralIndex.count += num
-        case .slightlyUpset:
-            EmotionUserDefaults.SlightlyUpsetIndex.count += num
-        case .verySad:
-            EmotionUserDefaults.verySadIndex.count += num
-        }
-    }
-    
+    // MARK: - Static Methods
+    /// UserDefault 값 초기화
+    /// - Parameter emotion: 초기화 할 Emotion
     static func clearCount(at emotion: Self) {
         switch emotion {
         case .veryHappy:
@@ -61,6 +34,7 @@ enum Emotion: Int, CaseIterable {
         }
     }
     
+    /// UserDefaults 모든 값 초기화
     static func clearAllCount() {
         EmotionUserDefaults.VeryHappyIndex.count = 0
         EmotionUserDefaults.ModerateSmileIndex.count = 0
@@ -68,6 +42,42 @@ enum Emotion: Int, CaseIterable {
         EmotionUserDefaults.SlightlyUpsetIndex.count = 0
         EmotionUserDefaults.verySadIndex.count = 0
     }
+    
+    // MARK: - Public Properties
+    /// UserDefault에서 카운트 값 가져오기
+    public var getCount: Int {
+        switch self {
+        case .veryHappy:
+            return EmotionUserDefaults.VeryHappyIndex.count
+        case .moderateSmile:
+            return EmotionUserDefaults.ModerateSmileIndex.count
+        case .neutral:
+            return EmotionUserDefaults.NeutralIndex.count
+        case .slightlyUpset:
+            return EmotionUserDefaults.SlightlyUpsetIndex.count
+        case .verySad:
+            return EmotionUserDefaults.verySadIndex.count
+        }
+    }
+    // MARK: - Public Methods
+    /// UserDefault에 카운트 값 추가하기
+    /// - Parameter num: 카운트 횟수
+    public func addCount(_ num: Int) {
+        switch self {
+        case .veryHappy:
+            EmotionUserDefaults.VeryHappyIndex.count += num
+        case .moderateSmile:
+            EmotionUserDefaults.ModerateSmileIndex.count += num
+        case .neutral:
+            EmotionUserDefaults.NeutralIndex.count += num
+        case .slightlyUpset:
+            EmotionUserDefaults.SlightlyUpsetIndex.count += num
+        case .verySad:
+            EmotionUserDefaults.verySadIndex.count += num
+        }
+    }
+    
+    
 }
 
 
