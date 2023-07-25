@@ -10,7 +10,7 @@ import SnapKit
 
 class EmotionViewController: UIViewController {
     @IBOutlet var emotionButtonCollection: [UIButton]!
-    let emotion: [Emotion] = [.veryHappy, .moderateSmile, .neutral, .slightlyUpset, .verySad]
+    let emotion: [Emotion] = Emotion.allCases
     var countLabelCollection: [UILabel] = []
     
     
@@ -53,8 +53,8 @@ class EmotionViewController: UIViewController {
     @IBAction func emotionButtonTapped(_ sender: UIButton) {
         let emt = emotion[sender.tag]
         let label = countLabelCollection[sender.tag]
-        
         emt.addCount(1)
+        
         UIView.transition(
             with: label,
             duration: 0.3,

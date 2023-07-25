@@ -7,6 +7,7 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -279,18 +280,29 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="OH MY MOOD" id="kge-iU-MAv">
-                        <rightBarButtonItems>
-                            <barButtonItem enabled="NO" id="hwH-MM-WwL" userLabel="spacer"/>
-                            <barButtonItem title="Item" image="ellipsis.circle" catalog="system" id="B3f-Sk-hH8">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="lq5-Sb-LL7">
+                            <imageReference key="image" image="ellipsis.circle" catalog="system" symbolScale="large"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aJw-dh-FHq">
+                                <rect key="frame" x="351.33333333333331" y="9.3333333333333339" width="25.666666666666686" height="25.666666666666664"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="Pqb-Ri-iVD">
+                                    <children>
+                                        <command title="Item 1" id="YiD-Xh-v3U"/>
+                                        <command title="Item 2" id="CN0-tC-1Pc"/>
+                                    </children>
+                                </menu>
+                                <state key="normal">
+                                    <imageReference key="image" image="ellipsis.circle" catalog="system" symbolScale="large"/>
+                                </state>
                                 <connections>
-                                    <action selector="pullDownTapped:" destination="ko1-OA-Viw" id="mbj-3Z-q9x"/>
+                                    <action selector="rightBarButtonTapped:" destination="ko1-OA-Viw" eventType="touchUpInside" id="oRm-e1-sb9"/>
                                 </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="pullDownButton" destination="B3f-Sk-hH8" id="qUl-Yr-5pU"/>
+                        <outlet property="rightBarButton" destination="aJw-dh-FHq" id="2ud-tn-5iT"/>
                         <outletCollection property="backgroundViewCollection" destination="nUv-JW-EHM" collectionClass="NSMutableArray" id="6Pq-GD-phJ"/>
                         <outletCollection property="backgroundViewCollection" destination="PqZ-PS-qZY" collectionClass="NSMutableArray" id="R7G-sR-CBM"/>
                         <outletCollection property="backgroundViewCollection" destination="A84-5j-f8q" collectionClass="NSMutableArray" id="8of-f0-tcX"/>

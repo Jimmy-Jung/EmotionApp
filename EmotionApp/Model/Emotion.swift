@@ -45,6 +45,29 @@ enum Emotion: Int, CaseIterable {
             EmotionUserDefaults.verySadIndex.count += num
         }
     }
+    
+    static func clearCount(at emotion: Self) {
+        switch emotion {
+        case .veryHappy:
+            EmotionUserDefaults.VeryHappyIndex.count = 0
+        case .moderateSmile:
+            EmotionUserDefaults.ModerateSmileIndex.count = 0
+        case .neutral:
+            EmotionUserDefaults.NeutralIndex.count = 0
+        case .slightlyUpset:
+            EmotionUserDefaults.SlightlyUpsetIndex.count = 0
+        case .verySad:
+            EmotionUserDefaults.verySadIndex.count = 0
+        }
+    }
+    
+    static func clearAllCount() {
+        EmotionUserDefaults.VeryHappyIndex.count = 0
+        EmotionUserDefaults.ModerateSmileIndex.count = 0
+        EmotionUserDefaults.NeutralIndex.count = 0
+        EmotionUserDefaults.SlightlyUpsetIndex.count = 0
+        EmotionUserDefaults.verySadIndex.count = 0
+    }
 }
 
 

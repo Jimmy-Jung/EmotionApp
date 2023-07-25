@@ -29,7 +29,7 @@ struct UserDefault<T> {
 
 struct EmotionUserDefaults {
     struct VeryHappyIndex {
-        @UserDefault(key: keyEnum.verySadIndex.rawValue, defaultValue: 0)
+        @UserDefault(key: keyEnum.veryHappyIndex.rawValue, defaultValue: 0)
         static var count: Int
     }
     struct ModerateSmileIndex {
@@ -49,7 +49,7 @@ struct EmotionUserDefaults {
         static var count: Int
     }
     
-    enum keyEnum: String {
+    enum keyEnum: String, CaseIterable {
         case veryHappyIndex
         case moderateSmileIndex
         case neutralIndex
