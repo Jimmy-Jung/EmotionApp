@@ -107,11 +107,11 @@ final class EmotionViewController: UIViewController {
         }
     }
     
-//    @IBAction func emotionButtonTapped(_ sender: UIButton) {
-//        let emt = emotion[sender.tag]
-//        let label = countLabelCollection[sender.tag]
-//        emt.addCount(1)
-//        animateCountLabel(to: label, count: emt.getCount, index: sender.tag)
-//    }
+    @IBAction func emotionButtonTapped(_ sender: UIButton) {
+        let emt = emotion[sender.tag]
+        let label = countLabelCollection[sender.tag]
+        emt.addCount(1)
+        animateCountLabel(to: label, count: emt.getCount, index: sender.tag)
+    }
 }
 

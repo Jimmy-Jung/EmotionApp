@@ -22,7 +22,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f2g-8k-SCI">
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-pm-zr1">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-pm-zr1">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="133.33333333333334"/>
                                         <color key="backgroundColor" red="0.90588235859999999" green="0.45098042490000001" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <menu key="menu" id="tEY-TN-DSb">
@@ -121,12 +121,13 @@
             </objects>
             <point key="canvasLocation" x="1962.5954198473282" y="-300"/>
         </scene>
-        <!--ㄴㅇㅇㄴ-->
+        <!--Tab Bar Controller-->
         <scene sceneID="2bV-df-Gzm">
             <objects>
-                <tabBarController title="ㄴㅇㅇㄴ" automaticallyAdjustsScrollViewInsets="NO" id="oft-MN-y7j" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oft-MN-y7j" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7nT-HV-hKo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="selectedImageTintColor" systemColor="labelColor"/>
@@ -310,7 +311,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="OH MY MOOD" id="kge-iU-MAv">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="lq5-Sb-LL7">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="lq5-Sb-LL7">
                             <imageReference key="image" image="ellipsis.circle" catalog="system" symbolScale="large"/>
                             <button key="customView" opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aJw-dh-FHq">
                                 <rect key="frame" x="351.33333333333331" y="9.3333333333333339" width="25.666666666666686" height="25.666666666666664"/>
