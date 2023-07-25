@@ -27,33 +27,35 @@ struct UserDefault<T> {
     }
 }
 
-struct VeryHappyIndex {
-    @UserDefault(key: keyEnum.verySadIndex.rawValue, defaultValue: 0)
-    static var count: Int
-}
-struct ModerateSmileIndex {
-    @UserDefault(key: keyEnum.moderateSmileIndex.rawValue, defaultValue: 0)
-    static var count: Int
-}
-struct NeutralIndex {
-    @UserDefault(key: keyEnum.neutralIndex.rawValue, defaultValue: 0)
-    static var count: Int
-}
-struct SlightlyUpsetIndex {
-    @UserDefault(key: keyEnum.slightlyUpsetIndex.rawValue, defaultValue: 0)
-    static var count: Int
-}
-struct verySadIndex {
-    @UserDefault(key: keyEnum.verySadIndex.rawValue, defaultValue: 0)
-    static var count: Int
-}
-
-enum keyEnum: String {
-    case veryHappyIndex
-    case moderateSmileIndex
-    case neutralIndex
-    case slightlyUpsetIndex
-    case verySadIndex
+struct EmotionUserDefaults {
+    struct VeryHappyIndex {
+        @UserDefault(key: keyEnum.verySadIndex.rawValue, defaultValue: 0)
+        static var count: Int
+    }
+    struct ModerateSmileIndex {
+        @UserDefault(key: keyEnum.moderateSmileIndex.rawValue, defaultValue: 0)
+        static var count: Int
+    }
+    struct NeutralIndex {
+        @UserDefault(key: keyEnum.neutralIndex.rawValue, defaultValue: 0)
+        static var count: Int
+    }
+    struct SlightlyUpsetIndex {
+        @UserDefault(key: keyEnum.slightlyUpsetIndex.rawValue, defaultValue: 0)
+        static var count: Int
+    }
+    struct verySadIndex {
+        @UserDefault(key: keyEnum.verySadIndex.rawValue, defaultValue: 0)
+        static var count: Int
+    }
+    
+    enum keyEnum: String {
+        case veryHappyIndex
+        case moderateSmileIndex
+        case neutralIndex
+        case slightlyUpsetIndex
+        case verySadIndex
+    }
 }
 
 
