@@ -14,6 +14,8 @@
 		5501B6412A6FB2A3008378F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5501B6402A6FB2A3008378F0 /* Assets.xcassets */; };
 		5501B6442A6FB2A4008378F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5501B6422A6FB2A4008378F0 /* LaunchScreen.storyboard */; };
 		5501B64C2A6FBA8E008378F0 /* StaticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501B64B2A6FBA8E008378F0 /* StaticsViewController.swift */; };
+		5501B64E2A6FBF1A008378F0 /* EmotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501B64D2A6FBF1A008378F0 /* EmotionManager.swift */; };
+		5501B6502A6FC066008378F0 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501B64F2A6FC066008378F0 /* UserDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5501B6432A6FB2A4008378F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5501B6452A6FB2A4008378F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5501B64B2A6FBA8E008378F0 /* StaticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticsViewController.swift; sourceTree = "<group>"; };
+		5501B64D2A6FBF1A008378F0 /* EmotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionManager.swift; sourceTree = "<group>"; };
+		5501B64F2A6FC066008378F0 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				5501B6422A6FB2A4008378F0 /* LaunchScreen.storyboard */,
 				5501B6452A6FB2A4008378F0 /* Info.plist */,
 				5501B64B2A6FBA8E008378F0 /* StaticsViewController.swift */,
+				5501B64D2A6FBF1A008378F0 /* EmotionManager.swift */,
+				5501B64F2A6FC066008378F0 /* UserDefault.swift */,
 			);
 			path = EmotionApp;
 			sourceTree = "<group>";
@@ -143,7 +149,9 @@
 			files = (
 				5501B64C2A6FBA8E008378F0 /* StaticsViewController.swift in Sources */,
 				5501B63C2A6FB2A1008378F0 /* EmotionViewController.swift in Sources */,
+				5501B6502A6FC066008378F0 /* UserDefault.swift in Sources */,
 				5501B6382A6FB2A1008378F0 /* AppDelegate.swift in Sources */,
+				5501B64E2A6FBF1A008378F0 /* EmotionManager.swift in Sources */,
 				5501B63A2A6FB2A1008378F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
