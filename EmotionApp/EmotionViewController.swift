@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class EmotionViewController: UIViewController {
+    @IBOutlet var emotionButtonCollection: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func emotionButtonTapped(_ sender: UIButton) {
+    }
+    
 }
 
