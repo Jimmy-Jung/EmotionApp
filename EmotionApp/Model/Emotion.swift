@@ -97,8 +97,6 @@ enum Emotion: Int, CaseIterable {
             EmotionUserDefaults.verySadIndex.count += num
         }
     }
-    
-    
 }
 
 
