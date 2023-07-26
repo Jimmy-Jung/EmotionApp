@@ -19,7 +19,8 @@ enum Emotion: Int, CaseIterable {
     // MARK: - Static Methods
     /// UserDefault 값 초기화
     /// - Parameter emotion: 초기화 할 Emotion
-    static func clearCount(at emotion: Self) {
+    @discardableResult
+    static func clearCount(at emotion: Self) -> Int{
         switch emotion {
         case .veryHappy:
             EmotionUserDefaults.VeryHappyIndex.count = 0
@@ -32,6 +33,7 @@ enum Emotion: Int, CaseIterable {
         case .verySad:
             EmotionUserDefaults.verySadIndex.count = 0
         }
+        return 0
     }
     
     /// UserDefaults 모든 값 초기화
@@ -41,6 +43,25 @@ enum Emotion: Int, CaseIterable {
         EmotionUserDefaults.NeutralIndex.count = 0
         EmotionUserDefaults.SlightlyUpsetIndex.count = 0
         EmotionUserDefaults.verySadIndex.count = 0
+    }
+    
+    /// UserDefault 값 설정
+    /// - Parameters:
+    ///   - emotion: Emotion Type
+    ///   - count: 설정해줄 값
+    static func setCount(at emotion: Self, count: Int) {
+        switch emotion {
+        case .veryHappy:
+            EmotionUserDefaults.VeryHappyIndex.count = count
+        case .moderateSmile:
+            EmotionUserDefaults.ModerateSmileIndex.count = count
+        case .neutral:
+            EmotionUserDefaults.NeutralIndex.count = count
+        case .slightlyUpset:
+            EmotionUserDefaults.SlightlyUpsetIndex.count = count
+        case .verySad:
+            EmotionUserDefaults.verySadIndex.count = count
+        }
     }
     
     // MARK: - Public Properties
